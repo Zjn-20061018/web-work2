@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>吉他社招新</title>
+</head>
+<body>
+<!-- 左上角点击播放背景音乐 -->
+<div style="position:absolute;top:10px;left:10px;">
+  <a href="javascript:playAudio()">🎵 播放背景音乐</a>
+  <audio id="bgm" src="bg.mp3">
+</div>
+<script>
+function playAudio(){
+  let aud = document.getElementById("bgm");
+  aud.paused ? aud.play() : aud.pause();
+}
+</script>
+
+<h1 id="top">吉他社 · 招新网站</h1>
+
+<p>
+<a href="#intro">社团简介</a> |
+<a href="#act">活动安排</a> |
+<a href="#show">风采展示</a> |
+<a href="#story">社员故事</a> |
+<a href="#form">在线报名</a>
+</p>
+
+<h2 id="intro">社团简介</h2>
+<p>
+吉他社是本校富有活力的器乐社团，以传播吉他音乐、丰富校园文艺生活为宗旨，面向全校热爱吉他、想要学习弹唱与指弹的同学开放。无论有无乐器基础，只要心怀热爱都可以加入。社团长期开设零基础公开课，由高年级社员授课，从持琴姿势、基础和弦、右手节奏开始教学，帮助新手入门。我们会举办草坪音乐会、合奏排练、歌曲改编分享会，大家一起扒谱、合奏、创作。这里没有门槛，民谣、流行、指弹、摇滚爱好者都能找到同好。音乐不需要高超技巧，重要的是愿意拨动琴弦，唱出心底的旋律。吉他社希望成为音乐爱好者的自留地，让每一位成员在琴弦之间收获浪漫与陪伴。
+</p>
+<p><a href="#top">返回顶部</a></p>
+
+<h2 id="act">活动安排</h2>
+<table border="1" width="90%">
+  <tr>
+    <th colspan="4">吉他社 2026 春季学期活动安排表</th>
+  </tr>
+  <tr align="center">
+    <th>活动名称</th>
+    <th>时间</th>
+    <th>地点</th>
+    <th>备注</th>
+  </tr>
+  <tr>
+    <td>新成员见面会</td>
+    <td>第 2 周周六晚 19:00</td>
+    <td>文艺楼 203</td>
+    <td>新人认识、介绍社团规章</td>
+  </tr>
+  <tr>
+    <td>吉他基础教学公开课</td>
+    <td>第 3 周周六晚 19:00</td>
+    <td>文艺楼 203</td>
+    <td>零基础免费教学</td>
+  </tr>
+  <tr>
+    <td>草坪弹唱音乐会</td>
+    <td>第 6 周周五傍晚</td>
+    <td>中心草坪</td>
+    <td>自由上台弹唱</td>
+  </tr>
+  <tr>
+    <td>学期合奏汇演</td>
+    <td>第 15 周周日 14:00</td>
+    <td>学校大礼堂</td>
+    <td>学期成果展示</td>
+  </tr>
+</table>
+<p><a href="#top">返回顶部</a></p>
+
+<h2 id="show">风采展示</h2>
+<p>点击图片查看活动详情</p>
+<a href="club_intro.html">
+  <img src="guitar.jpg" width="500" alt="社团排练">
+</a>
+<br>
+<embed src="guitar.mp4" width="500" height="280">
+<p><a href="#top">返回顶部</a></p>
+
+<h2 id="story">社员故事</h2>
+<p>
+很多社员刚入社的时候完全没有乐器基础，只是喜欢吉他温柔的音色。曾经有一位大二的同学，刚来时连简单和弦都按不牢，指尖经常酸痛起泡，好几次想要放弃。社团的学长学姐耐心陪着他练习，一点点纠正手型，陪着他坚持每日练习。慢慢的，他可以流畅弹奏分解和弦，弹唱自己最喜欢的民谣。后来他主动成为社团助教，带着新一届的新手入门。在吉他社，这样温暖的故事一直在上演。学琴的路上充满重复枯燥的练习，但一群同好互相鼓励，就不再孤单。在这里收获的不只是弹琴的技术，更是一群志同道合的朋友，是繁重学业之外安放情绪的小角落。如果你也想要拥有这样一段经历，欢迎加入我们，一起拨动琴弦，歌唱属于我们的青春。
+</p>
+<p><a href="#top">返回顶部</a></p>
+
+<h2 id="form">在线报名</h2>
+<form action="#">
+<table border="1">
+  <tr>
+    <td>姓名</td>
+    <td><input type="text" name="name"></td>
+  </tr>
+  <tr>
+    <td>性别</td>
+    <td>
+      <input type="radio" name="gender" value="male">男
+      <input type="radio" name="gender" value="female">女
+    </td>
+  </tr>
+  <tr>
+    <td>出生日期</td>
+    <td>
+      年：<input type="text" name="year">
+      月：<input type="text" name="month">
+      日：<input type="text" name="day">
+    </td>
+  </tr>
+  <tr>
+    <td>手机</td>
+    <td><input type="text" name="phone"></td>
+  </tr>
+  <tr>
+    <td>邮箱</td>
+    <td><input type="text" name="email"></td>
+  </tr>
+  <tr>
+    <td>是否有乐器基础</td>
+    <td>
+      <input type="radio" name="base" value="yes">有
+      <input type="radio" name="base" value="no">无
+    </td>
+  </tr>
+  <tr>
+    <td>兴趣方向（多选）</td>
+    <td>
+      <input type="checkbox" name="hobby" value="folk">民谣
+      <input type="checkbox" name="hobby" value="finger">指弹
+      <input type="checkbox" name="hobby" value="pop">流行弹唱
+      <input type="checkbox" name="hobby" value="rock">摇滚
+    </td>
+  </tr>
+  <tr>
+    <td>年级</td>
+    <td>
+      <select name="grade">
+        <option value="fresh">大一</option>
+        <option value="soph">大二</option>
+        <option value="jun">大三</option>
+        <option value="sen">大四</option>
+        <option value="post">研究生</option>
+      </select>
+    </td>
+  </tr>
+  <tr>
+    <td>自我介绍</td>
+    <td><textarea name="intro" placeholder="请简单介绍自己，以及加入吉他社的理由……"></textarea></td>
+  </tr>
+  <tr>
+    <td>是否服从活动安排</td>
+    <td>
+      <input type="radio" name="arrange" value="yes">是
+      <input type="radio" name="arrange" value="no">否
+    </td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>
+      <input type="submit" value="提交">
+      <input type="reset" value="重置">
+    </td>
+  </tr>
+</table>
+</form>
+<p><a href="#top">返回顶部</a></p>
+</body>
+</html>
